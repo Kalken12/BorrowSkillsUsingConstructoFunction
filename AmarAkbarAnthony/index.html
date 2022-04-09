@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+     
+    var AmarObj= {
+        name:"Amar",
+      work:"singer",
+      borrowSkill: function( skill1, skill2)
+      {
+        console.log(`i am ${this.name}, i am ${skill1} ,${skill2} and ${this.work}`)
+      }
+      }
+     var AkbarObj={
+        name:"Akbar",
+        work:"chef"
+    }
+    var AnthonyObj ={
+        name:"Anthony",
+        work:"magician"
+    }
+    AmarObj.borrowSkill.call(AmarObj,  "chef","magician")
+    AmarObj.borrowSkill.call(AkbarObj,  "singer","magician")
+    AmarObj.borrowSkill.call(AnthonyObj,  "singer","chef")
+  
+
+</script>
